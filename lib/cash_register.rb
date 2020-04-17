@@ -1,4 +1,5 @@
 class CashRegister
+  @items = []
 
   attr_accessor :total, :discount
 
@@ -17,5 +18,9 @@ class CashRegister
     end
     self.total -= (@discount/100.0)*self.total
     "After the discount, the total comes to $#{@total.to_i}."
+  end
+
+  def items
+
   end
 end
